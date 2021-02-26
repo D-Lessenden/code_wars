@@ -2,8 +2,7 @@ require 'pry'
 
 def solution(string)
   array = string.split /(?=[A-Z])/
-  a = array.join(", ")
-  b = a.delete(",")
+  array.join("")
 end
 
 p solution('camelCasing')
