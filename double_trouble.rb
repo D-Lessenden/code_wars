@@ -1,19 +1,6 @@
 require 'pry'
 # https://www.codewars.com/kata/57f7796697d62fc93d0001b8/train/ruby
 # level 7
-# def trouble(arr, t)
-#   if arr.combination(2).find{ |a,b| a+b == t}
-#     pair = arr.combination(2).find{ |a,b| a+b == t}
-#     arr.each_with_index do |num, ind|
-#       if pair[1] == num
-#         arr.delete_at(ind)
-#       end
-#     end
-#     trouble(arr, t)
-#   else
-#     arr
-#   end
-# end
 
 def trouble(arr, t)
   arr.each_with_index do |num, ind|
