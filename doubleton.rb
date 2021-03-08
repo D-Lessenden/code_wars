@@ -4,8 +4,7 @@ require 'pry'
 
 def doubleton(num)
   new = num+1
-  array = new.digits
-  if array.uniq.size == 2
+  if new.digits.uniq.size == 2
     return new
   else
     doubleton(new)
@@ -17,7 +16,7 @@ end
 p doubleton(130)
 # 131
 p doubleton(1434)
-# 14414
+# 1441
 p doubleton(20)
 # 21
 p doubleton(5)
